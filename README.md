@@ -1,2 +1,2 @@
 # web-dev
-Os projetos aqui nem sempre estão finalizados, são apenas projetos para praticar e testar códigos, linguagens e conceitos estudados.
+Área de estudos para praticar e testar códigos, linguagens e conceitos. Os projetos aqui nem sempre estão finalizados. 
