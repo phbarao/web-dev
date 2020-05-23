@@ -1,2 +1,2 @@
 # Cards Hover Effect
-Praticando Praticando HTML + CSS (:hover, ::before, z-index)
+Praticando HTML + CSS (:hover, ::before, z-index)
