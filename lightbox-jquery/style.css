@@ -1,0 +1,23 @@
+.img-wrapper {
+    overflow: hidden;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-wrapper img {
+    height: 76vh;
+    transition: transform 0.5s ease;
+    -webkit-transition:-webkit-transform 0.5s ease;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+.row.no-gutters [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+}
