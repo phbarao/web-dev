@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    z-index: 10;
+}
+
+.content {
+    display: flex;
+    position: absolute;
+    width: 70%;
+    height: 70vh;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+    z-index: 100;
+}
+
+h1 {
+    letter-spacing: 1.5rem;
+    color: lightgray;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    z-index: 800;
+}
+
+h1::before {
+    content: '';
+    width: 50%;
+    height: 0.2rem;
+    display: block;
+    background-color: rgb(224, 189, 33);
+    margin: 0 auto;
+    margin-bottom: 1.6rem;   
+}
+
+h1::after {
+    content: '';
+    width: 50%;
+    height: 0.2rem;
+    display: block;
+    letter-spacing: 1rem;
+    background-color: rgb(224, 189, 33);
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    
+}
+
+p {
+    margin-top: 2rem ;
+    max-width: 50%;
+    color: aliceblue;
+    text-align: justify;
+    font-size: 1.3rem;
+    line-height: 3.5rem;
+    letter-spacing: .15rem;
+    font-weight: lighter;
+    z-index: 900;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin-top: 2rem;
+    border: .1rem solid white;
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+
+a:hover {
+    cursor: pointer;
+}
