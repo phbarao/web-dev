@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 9px;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 10vh 90vh;    
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    min-height: 7rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 1px 10px rgba(68, 68, 68, 0.1);
+    z-index: 1000;
+}
+
+header img {
+    width: 2.5rem;
+    margin-left: 3rem;
+}
+
+header .btn {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+    background-color: black;
+    color: white;
+    padding: 1.8rem 2rem;
+    border-radius: 3rem;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: black;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 3rem;
+}
+
+.right i {
+    font-size: 2.2rem;
+    color: #767676;
+    margin-left: 2.5rem;
+}
+
+.right .icon-bell-alt {
+    font-size: 2rem;
+}
+
+.right .icon-angle-down {
+    font-size: 2rem;
+    margin-left: 1.2rem;
+}
+
+.user {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 2.5rem;
+}
+
+.search {
+    width: 60%;
+    background-color: #efefef;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.search p {
+    margin-left: 1.2rem;
+    margin-top: .4rem;
+    font-size: 1.6rem;
+    color: #8b8b8b;
+}
+
+.icon-search {
+    color: #767676;
+    font-size: 2rem;
+}
+
+.masonry {
+    column-count: 5;
+    grid-gap: 1.5rem;
+    margin-top: 12vh;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.masonry .card img {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 1.8rem;
+}
+
+.masonry .card img:hover {
+    opacity: .8;
+}
+
+.bottom-btn {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    cursor: pointer;
+}
+
+.icon-plus {
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 1px rgba(68, 68, 68, 0.4);
+}
+
+@media (max-width: 1280px) {
+    .masonry {
+        column-count: 4;
+    }
+    .search {
+        width: 53%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .masonry {
+        column-count: 3;
+    }
+    .search {
+        width: 38%;
+    }
+}
+
+@media (max-width: 760px) {
+    .masonry {
+        column-count: 2;
+    }
+    .search {
+        width: 30%;
+    }
+}
