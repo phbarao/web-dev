@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.container {
+    background: black;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+div {
+    width: 50%;
+    height: 50%;
+    background: rgb(143, 188, 199);
+}
