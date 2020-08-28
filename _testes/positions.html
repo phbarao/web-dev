@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: lightcyan;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 10px;
+            color: white;
+            text-transform: uppercase;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(43, 43, 43);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .azul {
+            width: 30%;
+            height: 20rem;
+            background: rgb(4, 77, 136);
+            z-index: 2;
+        }
+
+        .verde {
+            width: 40%;
+            height: 30rem;
+            background-color:  rgb(38, 136, 99);
+            z-index: 3;
+        }
+
+        .cinza {
+            width: 30%;
+            height: 20rem;
+            background-color:  rgb(128, 128, 128);
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="azul"></div>    
+        <div class="verde"></div>    
+        <div class="cinza"></div>    
+    </div>
+</body>
+</html>

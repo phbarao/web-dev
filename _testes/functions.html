@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            background-color: aquamarine;
+            display: grid;
+            width: 100%;
+            height: 30vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .two {
+            display: grid;
+            background-color: blanchedalmond;
+            width: 100%;
+            height: 70vh;
+            text-align: center;
+            align-items: center;
+        }
+
+        button {
+            font-size: 30px;
+            padding: 10px 30px;
+        }
+    </style>
+</head>
+<body> 
+    <section class="main">
+        <p>Click "Try it" to call a function with arguments</p>
+
+        <button onclick="myFunction('Pedro','Wizard')">Try it</button>
+    
+        <h1 id="demo"></h1>
+    </section>
+
+    <section class="two">
+        <p>When you click on one of the buttons, a function will be called. <br>The function will display the argument that is passed to it.</p>
+
+        <form> 
+        <input type="button" onclick="otherfunction('Good Morning!')" value="In the Morning"> 
+        <input type="button" onclick="otherfunction('Good Evening!')" value="In the Evening"> 
+        </form> 
+
+        <p id="demo2"></p>
+    </section>
+
+    <script>
+        function myFunction(name,job) {
+        document.getElementById("demo").innerHTML = "Welcome " + name + ", the " + job + ".";
+        }
+
+        function otherfunction(txt) { 
+        document.getElementById("demo2").innerHTML = txt
+        } 
+    </script>
+</body>
+</html>
