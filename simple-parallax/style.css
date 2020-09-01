@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    color: #333;
+    text-align: center;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+}
+
+.container .title {
+    padding: 6rem;
+}
+
+.container h1 {
+    font-family: 'Bungee', cursive;
+    font-size: 4.5rem;
+    margin-right: -1rem;
+    color: rgb(153, 153, 153);
+}
+
+.container h2 {
+    font-size: 7rem;
+    margin-right: -1rem;
+    color: #fff;
+    z-index: 10;
+    opacity: 0.8;
+}
+
+.container h3 {
+    font-size: 1.4rem;
+    line-height: 0;
+    padding: 1 rem 0;
+}
+
+.between {
+    height: 60rem;
+    position: relative;
+}
+
+.bg {
+    width: 100%;
+    background-color: tgba(0,0,0,.5);
+    padding: 2rem 0;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container .ny {
+    background-image: url("images/newyork.jpg");
+}
+
+.container .jp {
+    background-image: url("images/tokyo.jpg");
+}
+
+.container .du {
+    background-image: url("images/dubai.jpg");
+}
+
+.container .parallax {
+    width: 100%;
+    padding: 25rem 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
