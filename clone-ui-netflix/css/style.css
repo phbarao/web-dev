@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(87, 87, 87);
+}
+
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{clear: both;}
+
+header{
+    background: black;
+    padding: 15px 0;
+}
+
+/*
+    Menu 1 - Header
+*/
+
+.header-left{
+    float: left;
+}
+
+.header-left img{
+    max-width: 100px;
+    vertical-align: middle;
+}
+
+.menu-header{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.menu-header li{
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.menu-header a{
+    color: white;
+    text-decoration: none;
+}
+
+/**/
+
+.header-right{
+    position: relative;
+    top: 2px;
+    float: right;
+
+}
+
+.search,
+.notifications{
+    display: inline-block;
+}
+
+.notifications{
+    position: relative;
+    vertical-align: middle;
+}
+
+.circle-notifications{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: red;
+    text-align: center;
+}
+
+.circle-notifications span{
+    font-size: 12px;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.header-right i{
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+.header-right a{
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
