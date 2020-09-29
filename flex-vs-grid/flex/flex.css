@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+}
+
+.left {
+  width: 5vw;
+  min-width: 40px;
+  background: #d5e1df;
+}
+
+.center {
+  width: 25vw;
+  background: #b5e7a0;
+}
+
+.right {
+  width: 70vw;
+  background: #86af49;
+}

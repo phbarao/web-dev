@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(40px, 5vw) 25vw 70vw;
+}
+
+.left {
+  background: #d5e1df;
+}
+
+.center {
+  background: #b5e7a0;
+}
+
+.right {
+  background: #86af49;
+}
