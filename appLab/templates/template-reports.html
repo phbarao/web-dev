@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab App</title>
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../public/styles/main.css">
+    <link rel="stylesheet" href="../public/styles/relatorios.css">
+
+</head>
+<body>
+  <div class="container">
+      <header>
+        <a href="/index.html" class="logo">
+          <img src="../public/assets/logo-horizontal.png" alt="logo do laboratorio">
+        </a><!-- logo -->
+      </header>
+
+      <main>
+        <h1>Relatório de Prestação de serviços</h1>
+        <div class="filters">
+          <select class="clinic" id="clinic" name="clinic">
+            <option value="1">Selecione a Clínica:</option>
+            <option value="3">Amor Saúde</option>
+            <option value="2">Cia do Sorriso</option>
+          </select>
+
+          <div class="period">
+            <div class="initial-date">
+              <label for="initial-date">De: </label>
+              <input type="date" id="initial-date" name="initial-date">
+            </div> <!-- initial-date -->
+
+            <div class="final-date">
+              <label for="final-date">Até: </label>
+              <input type="date" id="final-date" name="final-date">
+            </div> <!-- final-date -->
+          </div>
+          
+        </div>
+
+        <table id="customers">
+          <tr>
+            <th></th>
+            <th>Descrição</th>
+            <th>Dentista</th>
+            <th>Paciente</th>
+            <th>Valor</th>
+          </tr>
+
+          <tr>
+            <td>03</td>
+            <td>Metalo Cerâmica sobre implante</td>
+            <td>Dr. Joel</td>
+            <td>Maria</td>
+            <td>R$ 100,00</td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Conserto P.P.R.</td>
+            <td>Dr. Sidnei</td>
+            <td>Maria</td>
+            <td>R$ 100,00</td>
+          </tr>
+
+          <tr>
+            <td>02</td>
+            <td>Conserto P.P.R.</td>
+            <td>Dr. Carlos</td>
+            <td>Maria</td>
+            <td>R$ 100,00</td>
+          </tr>
+
+          <tr>
+            <td>03</td>
+            <td>Metalo Cerâmica sobre implante</td>
+            <td>Dr. Joel</td>
+            <td>Maria</td>
+            <td>R$ 100,00</td>
+          </tr>
+
+          <tr>
+            <td>03</td>
+            <td>Metalo Cerâmica sobre implante</td>
+            <td>Dr. Joel</td>
+            <td>Maria</td>
+            <td>R$ 100,00</td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Conserto P.P.R.</td>
+            <td>Dr. Joel</td>
+            <td>Maria</td>
+            <td>R$ 100,00</td>
+          </tr>
+
+          <tr>
+            <td>03</td>
+            <td>Metalo Cerâmica sobre implante</td>
+            <td>Dr. Joel</td>
+            <td>Maria</td>
+            <td>R$ 100,00</td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Conserto P.P.R.</td>
+            <td>Dr. Joel</td>
+            <td>Maria</td>
+            <td>R$ 100,00</td>
+          </tr>
+
+          <tr>
+            <td>01</td>
+            <td>Conserto P.P.R.</td>
+            <td>Dr. Joel</td>
+            <td>Maria</td>
+            <td>R$ 100,00</td>
+          </tr>
+        </table>
+       
+        <div class="subtotal">
+          <h2>TOTAL: </h2>
+          <h3>{%TOTALPRICE%}</h3>
+        </div>
+
+        <div class="bottom-bar">
+          <a href="./index.html" class="export">
+              <h3>&#10004</h3>
+          </a><!--new-item-->
+        </div>
+      </main>
+
+  </div>
+</body>
+</html>

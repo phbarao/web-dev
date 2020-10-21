@@ -1,0 +1,79 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 24px;
+    background: #0f0f0f;
+    color: #505050;
+}
+
+header h1 {
+    color: #fff;
+    text-align: center;
+    margin: 60px auto;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+
+b {
+    font-weight: 900;
+    color: rgb(241, 192, 31);
+}
+
+p {
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.wall-item {
+    display: block;
+    margin: 0 0 24px 0;
+    padding: 12px;
+    background: #ebeae9;
+    transition: all 200ms;
+}
+
+.wall-item:hover {
+    transform: translateY(-6px);
+    transition: all 200ms;
+}
+
+.wall-item > img {
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+
+.wall-item h2 {
+    text-align: center;
+    color: rgb(43, 43, 43);
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.wall-column {
+    display: block;
+    position: relative;
+    width: 33.3333%;
+    float: left;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+    .wall-column {
+        width: 50%;
+    }
+
+@media (max-width: 480px) {
+    .wall-column {
+        width: auto;
+        float: none;
+    }
+}

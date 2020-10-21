@@ -1,0 +1,15 @@
+.under-construction {
+    width: 100%;
+    height: 100vh;
+    background-color: #57d1c7;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.under-construction h3 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "clinicName": "Cia do Sorriso (Ponta Grossa)",
+    "cepAdress": "84031031",
+    "numberAdress": "76",
+    "phoneNumber": "+554232256745",
+    "whatsappNumber": "+554232256745",
+    "clinicEmail": "atendimento@ciadosorriso.com.br",
+    "team": ["Dr. João dos Santos", "Dra. Maria da Silva"]
+  },
+  {
+    "clinicName": "Amor Saúde",
+    "phoneNumber": "+554232256745",
+    "whatsappNumber": "+554232256745",
+    "clinicEmail": "atendimento@ciadosorriso.com.br",
+    "team": ["Dr. João dos Santos", "Dra. Maria da Silva"]
+  }
+]

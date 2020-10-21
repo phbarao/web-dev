@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab App</title>
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../public/styles/main.css">
+    <link rel="stylesheet" href="../public/styles/new-item.css">
+
+</head>
+<body>
+    <div class="container">
+        <a class="exit-btn" href="/index.html">
+            <h2>&#10006</h2>
+        </a><!-- exit button -->
+
+        <div class="title">
+            <h1>Adicionar novo item</h1>
+        </div><!-- title -->
+
+        <form class="new-item">            
+            <div class="form-top">
+                <div class="quantity">
+                    <label for="quantity"></label>
+                    <input type="number" id="quantity" name="quantity" value="1">
+                </div><!-- quantity -->
+
+                <div class="conclusion-date">
+                    <label for="conclusion-date"></label>
+                    <input type="date" id="conclusion-date" name="conclusion-date">
+                </div><!-- conclusion-date -->
+            </div><!-- form-top -->
+
+            <input type="text" id="service" name="service" placeholder="Serviço">
+            <select id="dentist" name="dentist">
+                <option value="dentist">Dr. Sidnei Buosi</option>
+                <option value="dentist">Dr. Tiago Blagiesky</option>
+                <option value="dentist">Dentista</option>
+            </select>
+
+            <input type="text" id="patient" name="patient" placeholder="Paciente">
+            
+            <select id="commissioned" name="commissioned" value="Paciente">
+                <option value="commissioned">Lidiana</option>
+                <option value="commissioned">Lucas</option>
+                <option value="commissioned">Mirian</option>
+                <option value="commissioned">Stefanie</option>
+                <option value="commissioned">Funcionário Comissionado</option>
+            </select>
+            
+            <div class="additionals">
+                <input type="money" id="additional-cost" name="additional-cost" placeholder="R$ 0,00">
+                <input type="text" id="additional-description" name="aditional-description" placeholder="Adicional:">
+            </div>
+
+            <div class="form-end">
+                <div class="total">
+                    <div class="subtotal">
+                        <p>PREÇO DO SERVIÇO: <p>
+                        <h4>R$ 0,00</h4>
+                    </div>
+                    <div class="subtotal">
+                        <p>CUSTO ADICIONAL: <p>
+                        <h6>R$ 0,00</h6>
+                    </div>
+                </div>
+                <button class="add" type="submit">ADICIONAR</button>
+            </div>
+        </form><!-- new-item -->
+    </div><!-- container -->
+</body>
+</html>
