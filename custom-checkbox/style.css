@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: sans-serif;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.control {
+  display: inline-flex;
+  align-items: center;
+}
+
+.control_indicator {
+  margin-right: 0.25rem;
+  width: 0.95rem;
+  height: 0.95rem;
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.control_input:checked ~ .control_indicator {
+  background-color: blue;
+  background-image: url(/checkmark.svg);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
