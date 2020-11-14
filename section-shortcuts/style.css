@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  height: 300vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* SECTIONS */
+
+#one {
+  width: 100vw;
+  height: 100vh;
+  background: yellowgreen;
+}
+
+#two {
+  width: 100vw;
+  height: 100vh;
+  background: turquoise;
+}
+
+#three {
+  width: 100vw;
+  height: 100vh;
+  background: violet;
+}
+
+/* SHORTCUTS BAR */
+
+.shortcuts {
+  width: 30px;
+  height: 100px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  position: fixed;
+  top: 45%;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SHORTCUTS */
+
+.first-shortcut {
+  width: 20px;
+  height: 20px;
+  background-color: yellowgreen;
+  border-radius: 25%;
+  margin-bottom: 10px;
+}
+
+.second-shortcut {
+  width: 20px;
+  height: 20px;
+  background-color: turquoise;
+  border-radius: 25%;
+  margin-bottom: 10px;
+}
+
+.third-shortcut {
+  width: 20px;
+  height: 20px;
+  background-color: violet;
+  border-radius: 25%;
+}
+
+.shortcuts a .text {
+  color: white;
+  opacity: 0;
+}
+
+.shortcuts a {
+  color: white;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  transition: 0.2s;
+}
+
+.shortcuts a:hover {
+  width: 150%;
+  border-radius: 5px;
+  margin-left: 25px;
+  transition: 0.2s;
+}
+
+.shortcuts a .text:hover {
+  opacity: 1;
+}
