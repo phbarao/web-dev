@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Html Table</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+      }
+
+      .father-table {
+        width: 100%;
+        /* height: 100vh; */
+        border-collapse: collapse;
+        table-layout: fixed;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      th {
+        padding: 5px 0;
+        border: 1px solid #333;
+        color: rgb(128, 190, 240);
+      }
+
+      td {
+        border-left: 1px solid #333;
+      }
+
+      .service-item {
+        border-bottom: 1px solid #333;
+      }
+
+      .service-item:nth-child(even) {
+        background-color: #e3e3e3;
+      }
+
+      .son-table {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+
+      .son-table tr {
+        border-bottom: 1px solid #333;
+      }
+
+      .son-table tr:last-of-type {
+        border-bottom: none;
+      }
+
+      .son-table td {
+        padding: 5px 0;
+      }
+
+      .date {
+        width: 40px;
+      }
+
+      .amount {
+        width: 35px;
+        border-left: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table cellpadding="0" class="father-table">
+      <thead>
+        <tr>
+          <th class="date">Data</th>
+          <th>Dentista</th>
+          <th>Paciente</th>
+          <th class="amount">Qtd.</th>
+          <th>Descrição</th>
+          <th class="unity">Unitário</th>
+          <th>Adicional</th>
+          <th>OBS</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="service-item">
+          <td>10/01</td>
+          <td>Pedro Henrique</td>
+          <td>Pedro</td>
+          <td colspan="5">
+            <table class="son-table">
+              <tr>
+                <td class="amount">3</td>
+                <td>Aplicação Cerâmica</td>
+                <td>R$ 80,00</td>
+                <td>---</td>
+                <td>---</td>
+              </tr>
+
+              <tr>
+                <td class="amount">3</td>
+                <td>Metalocerâmica</td>
+                <td>R$ 80,00</td>
+                <td>---</td>
+                <td>---</td>
+              </tr>
+            </table>
+          </td>
+
+          <td>R$ 240,00</td>
+        </tr>
+
+        <tr class="service-item">
+          <td>10/01</td>
+          <td>Pedro Henrique</td>
+          <td>Pedro</td>
+          <td colspan="5">
+            <table class="son-table">
+              <tr>
+                <td class="amount">3</td>
+                <td>Aplicação Cerâmica</td>
+                <td>R$ 80,00</td>
+                <td>---</td>
+                <td>---</td>
+              </tr>
+            </table>
+          </td>
+
+          <td>R$ 240,00</td>
+        </tr>
+
+        <tr class="service-item">
+          <td>10/01</td>
+          <td>Pedro Henrique</td>
+          <td>Pedro</td>
+          <td colspan="5">
+            <table class="son-table">
+              <tr>
+                <td class="amount">3</td>
+                <td>Aplicação Cerâmica</td>
+                <td>R$ 80,00</td>
+                <td>---</td>
+                <td>---</td>
+              </tr>
+
+              <tr>
+                <td class="amount">3</td>
+                <td>Aplicação Cerâmica</td>
+                <td>R$ 80,00</td>
+                <td>---</td>
+                <td>---</td>
+              </tr>
+            </table>
+          </td>
+
+          <td>R$ 240,00</td>
+        </tr>
+
+        <tr class="service-item">
+          <td>10/01</td>
+          <td>Pedro Henrique</td>
+          <td>Pedro</td>
+          <td colspan="5">
+            <table class="son-table">
+              <tr>
+                <td class="amount">3</td>
+                <td>Aplicação Cerâmica</td>
+                <td>R$ 80,00</td>
+                <td>---</td>
+                <td>---</td>
+              </tr>
+
+              <tr>
+                <td class="amount">3</td>
+                <td>Aplicação Cerâmica</td>
+                <td>R$ 80,00</td>
+                <td>---</td>
+                <td>---</td>
+              </tr>
+            </table>
+          </td>
+
+          <td>R$ 240,00</td>
+        </tr>
+
+        <tr class="service-item">
+          <td>10/01</td>
+          <td>Pedro Henrique</td>
+          <td>Pedro</td>
+          <td colspan="5">
+            <table class="son-table">
+              <tr>
+                <td class="amount">3</td>
+                <td>Aplicação Cerâmica</td>
+                <td>R$ 80,00</td>
+                <td>---</td>
+                <td>---</td>
+              </tr>
+            </table>
+          </td>
+
+          <td>R$ 240,00</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
